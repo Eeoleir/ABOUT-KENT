@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap");
 *{
     margin: 0;
@@ -17,13 +18,13 @@
     max-width: 60%;
 }
 /* HEADER */
-.header {
-    min-height: 100vh;
+body {
+    height: 200%;
     width: 100%;
     background: #080808;
     background-position: center;
     background-size: cover;
-    position: relative;
+    position: absolute;
 }
 nav {
     background: #1B1B1B;
@@ -115,95 +116,84 @@ nav {
     transition: 1s;
 
 }
-.loading {
-    visibility: hidden;
+
+/* contact with map section */
+.contact-map{
+    width: 100%;
+    margin-top: 7%;
+    align-items: center;
+    text-align: center;
+}
+.contact-map h3{
+    color: #9C9C9C;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 400px;
+}
+.contact-map .map{
+    margin-top: 3%;
+    width: 100%;
 }
 
-.main-content{
-    overflow: hidden;
+
+/* CONTACT INFO DESIGNS */
+
+.contact-us{
     width: 80%;
     margin: auto;
-    padding-top: 120px;
-    padding-bottom: 50px;
-    
+    margin-top: 10%;
 }
-.main-content .left{
-    width: 100%;
-    margin: 0 0 5% 8%;
-    padding: 0 50px 0;
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
 }
-.main-content .left h3{
-
-    font-family: Timmana;
-    font-size: 32px;
-    color: #9C9C9C;
-    letter-spacing: .1em;
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 15%;
 }
-.main-content .left h3 span{
-    font-family: "Clicker Script", cursive;
-    color: #EC1839;
-    font-size: 32px;
-    letter-spacing: .1em;
-}
-.main-content .left h4{
-    margin-top: 4%;
-    font-family: Timmana;
-    font-size: 28px;
-    color: #9C9C9C;
-    letter-spacing: .1em;
-}
-.main-content .left h4 span{
-    font-family: Timmana;
-    color: #EC1839;
+.contact-col div .fa-solid{
     font-size: 30px;
-    letter-spacing: .1em;
+    color: #CE2A44;
+    margin: 10px;
+    top: -20px;
+    margin-right: 30px;
 }
 
-.main-content .left p{
-    letter-spacing: .1em;
-    font-family: IBM Plex Mono;
+.contact-col div p{
+    padding: 0;
     color: #9C9C9C;
-    font-size: 20px;
-    letter-spacing: .1em;
-    margin-top: 5%;
-    
+    font-family: Poppins;
 }
 
-.logo2 .fa-brands{
-    color: #EC1839 ;
-    margin: 6% 4% 6% 0;
-    cursor: pointer;
+.contact-col div h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #9C9C9C;
+    font-weight: 800;
 }
 
-.about-btn {
-    display: inline-block;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: IBM Plex Mono;
-    letter-spacing: .2em;
-    color: #D9D9D9;
-    border: 1px solid #fff;
-    padding: 17px 24px;
-    position: relative;
-    background: transparent;
-    cursor: pointer;
+.contact-col input, .contact-col textarea{
+    width: 80%;
+    padding: 15px;
+    margin: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-.about-btn:hover {
-    border: 1px solid #876563;
-    background: #CE2A44;
-    transition: 1s;
-
+.contact-col button{
+    margin-left: 17px;
 }
 
-.main-content .right{
-    flex-basis: 60%;
-    position: relative;
-    perspective: 1000px;
-    margin: 3%;
-    left: 30px;
-}
-.main-content .right img{
-    
-}
 
+@media(max-width: 700px){
+    .contact-col div h5{
+        font-size: 15px;
+        margin-bottom: 3px;
+        color: #555;
+        font-weight: 400;
+        
+    }
+}
