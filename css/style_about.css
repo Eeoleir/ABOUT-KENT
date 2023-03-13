@@ -23,7 +23,7 @@
 
 
 .who{
-    overflow: hidden;
+   overflow: hidden;
     width: 100%;
     margin: auto;
     padding-top: 180px;
@@ -34,6 +34,7 @@
     width: 60%;
     margin: 0 0 5% 23%;
     padding: 0 50px 0;
+    flex-basis: 60%;
 }
 .who .left h3{
     font-family: "Pirata One", sans-serif;
@@ -73,7 +74,7 @@
 }
 
 .who .right{
-    flex-basis: 40%;
+    flex-basis: 32%;
     position: relative;
     perspective: 1000px;
 }
@@ -141,10 +142,10 @@
 /* WHAT KIND OF PERSON I AM */
 
 .attitude{
-    overflow: hidden;
-    width: 100%;
-    padding-top: 120px;
-    padding-bottom: 110px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
     
 }
 .attitude h3{
@@ -163,14 +164,14 @@
 }
 
 
-.att-row {
-    
+.att-row { 
+    margin: 5%;
     display: flex;
-    margin-left: 16%
+    justify-content: space-between;
     
   }
 .att-column{
-    margin-right: 5%;
+    flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -182,12 +183,13 @@
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .layer{
+
     background: transparent;   
     height: 100%;
-    width: 100%;
+    width: 86%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 25px;
     transition: 0.5s;
 }
 .layer:hover{
@@ -228,5 +230,5 @@
     opacity: 1;
 }
 .attitude .touch-btn{
-    margin: 5% 0 0 43%;
+    margin-bottom:5%;
 }
