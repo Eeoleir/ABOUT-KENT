@@ -26,19 +26,19 @@
    overflow: hidden;
     width: 100%;
     margin: auto;
-    padding-top: 180px;
-    padding-bottom: 110px;
+    padding-top: 10%;
+    padding-bottom: 10%;
     
 }
 .who .left{
-    width: 50%;
-    margin: 0 0 5% 23%;
-    padding: 0 50px 0;
+    width: 90%;
+    margin: 0 0 0 21%;
+    padding: 0 5%;
     flex-basis: 50%;
 }
 .who .left h3{
     font-family: "Pirata One", sans-serif;
-    font-size: 64px;
+    font-size: 5em;
     color: #CE2A44;
     letter-spacing: .1em;
 }
@@ -46,10 +46,9 @@
     letter-spacing: .1em;
     font-family: IBM Plex Mono;
     color: #9C9C9C;
-    font-size: 20px;
+    font-size: 1.5em;
     letter-spacing: .1em;
-    margin-top: 5%;
-    margin-bottom: 6%;
+    margin: 5% 29% 6% 0%;
     
 }
 .touch-btn {
@@ -60,7 +59,7 @@
     letter-spacing: .2em;
     color: #D9D9D9;
     border: 1px solid #fff;
-    padding: 12px 24px;
+    padding: 1em 2em;
     position: relative;
     background: transparent;
     cursor: pointer;
@@ -74,30 +73,33 @@
 }
 
 .who .right{
-    flex-basis: 32%;
+    flex-basis: 100%;
     position: relative;
     perspective: 1000px;
     display: flex;
     align-items: center;
-    margin-left: -15%;
+    margin: 0 0 0 -7%;
 }
 .slider{
-    width: 51.6%;
-    height: 500px;
+    width: 52.6%;
+    height: auto;
+    max-height: 50vh;
     border-radius: 10px;
     overflow: hidden;
 }
 .slides{
     width: 100%;
-    height: 500px;
+    height: auto;
+    max-height: 50vh;
     display: flex;
+    
 }
 
 .slides input{
     display: none;
 }
 .slide {
-    width: %;
+    width: 100%;
     transition: 2s;
 }
 .who .right .slide img{
@@ -108,14 +110,22 @@
     position: relative;
 
 }
-
-.navi-manual{
+.navigations-container {
+    position: relative; 
+  }
+  
+.navi-manual, .auto-navi {
     position: absolute;
-    width: 800px;
-    margin-top: -15.7%;
+    width: 50%;
     display: flex;
-    margin-left: 18%;
-}
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    vertical-align: baseline;
+    margin-top: -3%;
+  }
+
+
 .manual-btn{
     border: 2px solid #212121;
     padding: 5.4px;
@@ -148,22 +158,13 @@
 }
 
 /* navigation auto */
-.auto-navi{
-    position: absolute;
-    align-items: center;
-    width: 1px;
-    margin-top: 33%;
-    margin-left: 18%;
-    display: flex;
 
-}
 .auto-navi div{
-    border: 2px solid #080808;
-    padding: 5.7px;
+    border: 2px solid #212121;
+    padding: 5.4px;
     border-radius: 10px;
+    cursor: pointer;
     transition: 1s;
-    margin-top: -50%;
-    margin-left: -50%;
 }
 
 .auto-navi div:not(:last-child){
@@ -187,7 +188,7 @@
 
 
 
-/* WHAT IS KENT SECTION */
+/* other hobbies section */
 
 .what{
     overflow: hidden;
@@ -201,6 +202,7 @@
     width: 60%;
     margin-left: 18%;
     padding: 0 50px 0;
+    
 }
 .slider2{
     width: 100%;
@@ -222,6 +224,7 @@
     transition: 2s;
 }
 .what .left .slide2 img{
+    white-space: pre-line;
     border-radius: 10px;
     top: 20px;
     width: 536px;
@@ -232,11 +235,12 @@
 }
 
 .navi-manual2{
-    position: absolute;
+    position: relative;
     width: 800px;
-    margin-top: -10.7%;
+    margin-top: -30.3%;
     display: flex;
-    margin-left: 12%;
+    margin-left:34%;
+    align-items: center;
 }
 .manual-btn2{
     border: 2px solid #212121;
@@ -270,45 +274,6 @@
     margin-left: -299.99%;
 }
 
-/* navigation auto */
-.auto-navi2{
-
-    position: absolute;
-    width: 800px;
-    margin-top: 48.51%;
-    display: flex;
-    margin-left: 12%;
-
-
-}
-.auto-navi2 div{
-    border: 2px solid #080808;
-    padding: 5.7px;
-    border-radius: 10px;
-    transition: 1s;
-    margin-top: -50%;
-    height: 2px;
-    
-}
-
-.auto-navi2 div:not(:last-child){
-    margin-right: 39.5px;
-}
-
-
-#radio5:checked ~ .auto-navi2 .auto-btn5{
-    background-color: #080808;
-}
-#radio6:checked ~ .auto-navi2 .auto-btn6{
-    background-color: #080808;
-}
-
-#radio7:checked ~ .auto-navi2 .auto-btn7{
-    background-color: #080808;
-}
-#radio8:checked ~ .auto-navi2 .auto-btn8{
-    background-color: #080808;
-}
 
 
 .what .right{
@@ -337,18 +302,22 @@
     text-align: justify;
 }
 
-/* WHAT KIND OF PERSON I AM */
+/* OTHER HOBBIES */
 
 .attitude{
     width: 80%;
     margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    
+    align-items: center;
+    padding-top: 50px; 
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+
+
 }
 .attitude h3{
     font-family: "Pirata One", sans-serif;
-    font-size: 64px;
+    font-size: 4rem;
     text-align: center;
     color: #CE2A44;
     letter-spacing: .1em;
@@ -356,8 +325,9 @@
 }
 
 .attitude img{
-    width: 300px;
-    height: 348px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     
 }
 
@@ -369,26 +339,27 @@
     
   }
 .att-column{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    margin-right: 2%;
+    border-radius: 1rem;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 3rem;
     position: relative;
     overflow: hidden;
 }
 
 
 .att-column:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2rem 0px rgba(0, 0, 0, 0.2);
 }
 .layer{
-
     background: transparent;   
     height: 100%;
-    width: 86%;
+    width: 20rem;
     position: absolute;
     top: 0;
-    left: 25px;
     transition: 0.5s;
+    border-radius: 5px;;
 }
 .layer:hover{
     background: #9C9C9C;   
@@ -396,28 +367,31 @@
 
 .layer h3{
     width: 100%;
+    left: 45%;
     font-weight: 500;
     color: #080808;
-    font-size: 40px;
+    font-size: 2.5rem;
     bottom: 0;
-    left: 50%;
+    
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
     transition: 0.5s;
 }
 .layer p{
-    width: 100%;
+    width: 80%;
     font-weight: 400;
     color: #080808;
     font-size: 17px;
     top: 0;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     position: absolute;
     text-align: center;
     opacity: 0;
     transition: 0.5s;
+
+    
 }
 .layer:hover h3 {
     bottom: 60%;
@@ -428,5 +402,8 @@
     opacity: 1;
 }
 .attitude .touch-btn{
-    margin-bottom:5%;
+    position: relative;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-top: 3rem;
 }

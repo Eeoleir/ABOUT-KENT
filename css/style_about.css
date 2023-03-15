@@ -139,18 +139,136 @@
     text-align: justify;
 }
 
-/* WHAT KIND OF PERSON I AM */
+/* WHAT IS KENT SECTION */
+
+.what{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 110px;
+    
+}
+.what .left{
+    width: 60%;
+    margin-left: 18%;
+    padding: 0 50px 0;
+    
+}
+.slider2{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides2{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.slides2 input{
+    display: none;
+}
+.slide2 {
+    width: 100%;
+    transition: 2s;
+}
+.what .left .slide2 img{
+    white-space: pre-line;
+    border-radius: 10px;
+    top: 20px;
+    width: 536px;
+    height: 350px;
+    position: relative;
+    margin-top: -2%;
+
+}
+
+.navi-manual2{
+    position: relative;
+    width: 800px;
+    margin-top: -30.3%;
+    display: flex;
+    margin-left:34%;
+    align-items: center;
+}
+.manual-btn2{
+    border: 2px solid #212121;
+    padding: 5.4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    height: 2px;
+}
+.manual-btn2:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn2:hover{
+    background-color: #212121;
+}
+
+
+#radio5:checked ~ .second{
+    margin-left: 0;
+}
+#radio6:checked ~ .second{
+    margin-left: -99.999%;
+}
+
+#radio7:checked ~ .second{
+    margin-left: -199.99%;
+}
+
+#radio8:checked ~ .second{
+    margin-left: -299.99%;
+}
+
+
+
+.what .right{
+    flex-basis: 40%;
+    position: relative;
+    perspective: 1000px;
+    left: -90px;
+    top: -50px;
+    margin-right: 50%;
+    
+}
+.what .right h3{
+    font-family: "Pirata One", sans-serif;
+    font-size: 64px;
+    color: #CE2A44;
+    letter-spacing: .1em;
+}
+.what .right p{
+    letter-spacing: .1em;
+    font-family: IBM Plex Mono;
+    color: #9C9C9C;
+    font-size: 20px;
+    letter-spacing: .1em;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    text-align: justify;
+}
+
+/* OTHER HOBBIES */
 
 .attitude{
     width: 80%;
     margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    
+    align-items: center;
+    padding-top: 50px; 
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+
+
 }
 .attitude h3{
     font-family: "Pirata One", sans-serif;
-    font-size: 64px;
+    font-size: 4rem;
     text-align: center;
     color: #CE2A44;
     letter-spacing: .1em;
@@ -158,8 +276,9 @@
 }
 
 .attitude img{
-    width: 300px;
-    height: 348px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     
 }
 
@@ -171,26 +290,27 @@
     
   }
 .att-column{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    margin-right: 2%;
+    border-radius: 1rem;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 3rem;
     position: relative;
     overflow: hidden;
 }
 
 
 .att-column:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2rem 0px rgba(0, 0, 0, 0.2);
 }
 .layer{
-
     background: transparent;   
     height: 100%;
-    width: 86%;
+    width: 20rem;
     position: absolute;
     top: 0;
-    left: 25px;
     transition: 0.5s;
+    border-radius: 5px;;
 }
 .layer:hover{
     background: #9C9C9C;   
@@ -198,28 +318,31 @@
 
 .layer h3{
     width: 100%;
+    left: 45%;
     font-weight: 500;
     color: #080808;
-    font-size: 40px;
+    font-size: 2.5rem;
     bottom: 0;
-    left: 50%;
+    
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
     transition: 0.5s;
 }
 .layer p{
-    width: 100%;
+    width: 80%;
     font-weight: 400;
     color: #080808;
     font-size: 17px;
     top: 0;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     position: absolute;
     text-align: center;
     opacity: 0;
     transition: 0.5s;
+
+    
 }
 .layer:hover h3 {
     bottom: 60%;
@@ -230,5 +353,8 @@
     opacity: 1;
 }
 .attitude .touch-btn{
-    margin-bottom:5%;
+    position: relative;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-top: 3rem;
 }
