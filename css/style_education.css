@@ -1,6 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*----------options-----------*/
+.row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.column{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+/* WHO IS KENT SECTION */
+.msg{
+    overflow: hidden;
+    width: 100%;
+    padding: 125px 0 150px 0;
+}
 .msg h1{
     color: yellow;
-    font-size: 26px;
+    font-size: 50px;
     text-align: center;
-    margin-top: 18%;
 }

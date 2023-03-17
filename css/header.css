@@ -1,42 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap");
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-/*----------options-----------*/
-.row {
-    margin: 1%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-.column{
-    flex: 0 0 60%;
-    max-width: 60%;
-}
 /* HEADER */
 body {
     height: 100vh;
     width: 100%;
     background: #080808;
-    background-position: center;
     background-size: cover;
     position: absolute;
 }
+
 nav {
-    overflow: hidden;
     background: #1B1B1B;
-    
     display: flex;
     padding: 0px 50px;
     justify-content: space-between;
     align-items: center;
-    
-    flex: 1;
 }
+
 .logo a {
     text-decoration: none;
     font-family: "Comfortaa";
@@ -86,7 +64,6 @@ nav {
 
 .nav-links ul li {
     margin: 28px 40px ;
-    list-style: none;
     display: inline-block;
     position: relative;
 }
@@ -100,7 +77,6 @@ nav {
 }
 
 .know-btn {
-    display: inline-block;
     border-radius: 50px;
     text-decoration: none;
     font-family: IBM Plex Mono;

@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_home.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/loader.css">
+
+    <!-- FONTS IN MY SITE -->
     <link rel="preconnect " href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ICONS IN MY SITE -->
     <script
       src="https://kit.fontawesome.com/0084cc2fcc.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <title>ABOUT ME</title>
+    <title>HOME PAGE</title>
 </head>
+
+
 <body>
     
-    <!-- HEADER -->
-    <section class = "header">
+    <!-- HOME PAGE -->
+    <section class = "HOME">
+        <!-- NAVIGATION AT THE TOP -->
         <nav>
             <div class="logo">
-                <a class="#" href="index.html"> <span>K </span> E V O</a>
+                <a href="index.html"> <span>K </span> E V O</a>
             </div>
-            
+
             <div class = "nav-links">
             
                 <ul>
@@ -39,74 +45,40 @@
                     <li> <a href="HOBBIES.html">HOBBIES</a></li>
                 </ul>
             </div>
+
             <div class="contact">
                 <a class="know-btn" href="CONTACT.html">CONTACT</a>
             </div>
         </nav>
         
-
+        <!-- MAIN CONTENT OF THE PAGE -->
         <div class="main-content">
-            <div class="home-info">
-                <div class="row">
-                    <div class="column">
-                        <div class="left">
-                            <h3>Hello, my name is <span> Kent Bryan V. Asilo</span></h3>
-                            <h4>I'm <span class="auto-type"></span></h4>
-                            <p>I am a college student, that has experienced in web  <br>
-                            development, programming, etc. ⚡ Fun fact I am an <br> open-minded and innovative person</p>
-                            <div class="logo2">
-                                <a href="https://www.facebook.com/bryankent.asilo/"><i  class="fa-brands fa-facebook-f fa-2x"></i></a>
-                                <a href="https://twitter.com/crypto_funder?s=09/"><i class="fa-brands fa-twitter fa-2x"></i></a>
-                                <a href="https://discordapp.com/users/803621733173166080"><i class="fa-brands fa-discord fa-2x"></i></a>
-                                <a href="https://github.com/Eeoleir"><i class="fa-brands fa-github fa-2x"></i></a>
-                            </div>
-                            <div>
-                                <a class="about-btn" href="ABOUT.html">ABOUT ME</a>
-                            </div>
+            <div class="row">
+                <!-- LEFT PART OF THE MAIN CONTENT -->
+                <div class="column">
+                    <div class="left">
+                        <h3>Hello, my name is <span> Kent Bryan V. Asilo</span></h3>
+                        <p>I am a college student in one of the university in Cagayan de Oro. 
+                           ⚡ Fun fact I am an open-minded and innovative person</p>
+                        <div class="logo2">
+                            <a href="https://www.facebook.com/bryankent.asilo/"><i  class="fa-brands fa-facebook-f fa-2x"></i></a>
+                            <a href="https://twitter.com/crypto_funder?s=09/"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                            <a href="https://discordapp.com/users/803621733173166080"><i class="fa-brands fa-discord fa-2x"></i></a>
+                            <a href="https://github.com/Eeoleir"><i class="fa-brands fa-github fa-2x"></i></a>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="right">
-                            <img src="../img/profile.png" alt="profile picture">
+                        <div>
+                            <a class="about-btn" href="ABOUT.html">ABOUT ME</a>
                         </div>
                     </div>
                 </div>
-                
+                <!-- RIGHT PART OF THE MAIN CONTENT -->
+                <div class="column">
+                    <div class="right">
+                        <img src="../img/profile.png" alt="profile picture">
+                    </div>
+                </div>
             </div>
-        </div>
-
     </section>
-    <!-- LOADER -->
-    <div class="center">
-        <div class="loader"></div>
-    </div>
-
-    <div style="position: relative">
-        <iframe style="position: absolute; top: 0; left: 0; width: 0; height: 0; visibility: hidden;"
-         src="https://www.youtube.com/embed/ObdvMkCKws" frameborder="0" allowfullscreen></iframe>
-        <iframe style="position: absolute; top: 0; left: 0; width: 0; height: 0; visibility: hidden;"
-         src="https://www.youtube.com/embed/ObdvMkCKws" frameborder="0" allowfullscreen></iframe>
-    </div>
-      
-
-    <!-- SCRIPT LOADER -->
-    <script type="text/javascript">
-        document.onreadystatechange = function(){
-            console.log(document.readyState);
-            if(document.readyState === "complete"){
-                document.querySelector('.center').style.display = 'none';
-            }
-        }
-    </script>
-    <!-- SCRIPT TYPER -->
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["21 years old", "BSIT Student", "Friendly"],
-            typeSpeed: 100,
-            backSpeed: 50,
-            loop: true
-        })
-    </script>
 
 </body>
 </html>

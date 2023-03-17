@@ -1,40 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap");
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 /*----------options-----------*/
 .row {
-    margin: 1%;
     display: flex;
     justify-content: space-between;
   }
 
 .column{
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex-basis: 50%;
+    max-width: 50%;
 }
 
-/* who is kent SECTION */
-
-
-
+/* WHO IS KENT SECTION */
 .who{
-   overflow: hidden;
+    overflow: hidden;
     width: 100%;
-    margin: auto;
-    padding-top: 180px;
-    padding-bottom: 110px;
+    padding: 125px 0 150px 0;
     
 }
+/* LEFT SIDE OF THIS ROW */
 .who .left{
-    width: 60%;
-    margin: 0 0 5% 23%;
-    padding: 0 50px 0;
-    flex-basis: 60%;
+    width: 100%;
+    margin: 10% 0 0 40%;
 }
 .who .left h3{
     font-family: "Pirata One", sans-serif;
@@ -47,13 +40,10 @@
     font-family: IBM Plex Mono;
     color: #9C9C9C;
     font-size: 20px;
-    letter-spacing: .1em;
-    margin-top: 5%;
-    margin-bottom: 6%;
-    
+    margin: 7% 35% 7% 0;   
+    text-align: justify;
 }
 .touch-btn {
-    display: inline-block;
     border-radius: 50px;
     text-decoration: none;
     font-family: IBM Plex Mono;
@@ -65,28 +55,21 @@
     background: transparent;
     cursor: pointer;
 }
-
 .touch-btn:hover {
     border: 1px solid #876563;
     background: #CE2A44;
     transition: 1s;
-
 }
-
+/* RIGHT SIDE OF THIS ROW */
 .who .right{
-    flex-basis: 32%;
+    margin-left: 12%;
+    flex-basis: 100%;
     position: relative;
-    perspective: 1000px;
 }
 .who .right img{
-    display: block;
-    top: -90px;
-    width: 530px;
+    width: 500px;
     height: 600px;
-    align-items: right;
-    position: absolute;
     left: -60px;
-    overflow: visible;
 }
 
 
@@ -95,32 +78,21 @@
 .what{
     overflow: hidden;
     width: 100%;
-    margin: auto;
-    padding-top: 120px;
-    padding-bottom: 110px;
-    
+    margin-bottom: 10%;
 }
+/* LEFT SIDE OF THIS ROW */
 .what .left{
-    width: 60%;
-    margin: 5% 10% 50% 23%;
-    padding: 0 50px 0;
+    margin-left: 30%;
+    width: 100%;
 }
 .what .left img{
-    display: block;
     width: 390px;
     height: 348px;
-    align-items: left;
-    position: absolute;
-    overflow: visible;
 }
-
+/* RIGHT SIDE OF THIS ROW */
 .what .right{
-    flex-basis: 40%;
-    position: relative;
-    perspective: 1000px;
-    left: -90px;
-    top: -50px;
-    
+    width: 100%;
+    margin: 5%;
 }
 .what .right h3{
     font-family: "Pirata One", sans-serif;
@@ -134,137 +106,17 @@
     color: #9C9C9C;
     font-size: 20px;
     letter-spacing: .1em;
-    margin-top: 8%;
-    margin-bottom: 6%;
+    margin: 6% 34% 0 0;
     text-align: justify;
 }
 
-/* WHAT IS KENT SECTION */
-
-.what{
-    overflow: hidden;
-    width: 100%;
-    margin: auto;
-    padding-top: 120px;
-    padding-bottom: 110px;
-    
-}
-.what .left{
-    width: 60%;
-    margin-left: 18%;
-    padding: 0 50px 0;
-    
-}
-.slider2{
-    width: 100%;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.slides2{
-    width: 100%;
-    height: 500px;
-    display: flex;
-}
-
-.slides2 input{
-    display: none;
-}
-.slide2 {
-    width: 100%;
-    transition: 2s;
-}
-.what .left .slide2 img{
-    white-space: pre-line;
-    border-radius: 10px;
-    top: 20px;
-    width: 536px;
-    height: 350px;
-    position: relative;
-    margin-top: -2%;
-
-}
-
-.navi-manual2{
-    position: relative;
-    width: 800px;
-    margin-top: -30.3%;
-    display: flex;
-    margin-left:34%;
-    align-items: center;
-}
-.manual-btn2{
-    border: 2px solid #212121;
-    padding: 5.4px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    height: 2px;
-}
-.manual-btn2:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn2:hover{
-    background-color: #212121;
-}
-
-
-#radio5:checked ~ .second{
-    margin-left: 0;
-}
-#radio6:checked ~ .second{
-    margin-left: -99.999%;
-}
-
-#radio7:checked ~ .second{
-    margin-left: -199.99%;
-}
-
-#radio8:checked ~ .second{
-    margin-left: -299.99%;
-}
-
-
-
-.what .right{
-    flex-basis: 40%;
-    position: relative;
-    perspective: 1000px;
-    left: -90px;
-    top: -50px;
-    margin-right: 50%;
-    
-}
-.what .right h3{
-    font-family: "Pirata One", sans-serif;
-    font-size: 64px;
-    color: #CE2A44;
-    letter-spacing: .1em;
-}
-.what .right p{
-    letter-spacing: .1em;
-    font-family: IBM Plex Mono;
-    color: #9C9C9C;
-    font-size: 20px;
-    letter-spacing: .1em;
-    margin-top: 8%;
-    margin-bottom: 6%;
-    text-align: justify;
-}
-
-/* OTHER HOBBIES */
-
+/* WHAT KIND OF PERSON I AM SECTION */
 .attitude{
-    width: 80%;
-    margin: auto;
+    width: 100%;
     align-items: center;
-    padding-top: 50px; 
     justify-content: center; 
     display: flex;
     flex-direction: column;
-
-
 }
 .attitude h3{
     font-family: "Pirata One", sans-serif;
@@ -276,85 +128,29 @@
 }
 
 .attitude img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    
+    height: fit-content;
+    width: 300px;
+    height: 300px;
 }
 
-
-.att-row { 
-    margin: 5%;
-    display: flex;
-    justify-content: space-between;
-    
-  }
 .att-column{
-    margin-right: 2%;
-    border-radius: 1rem;
+    border-radius: 10px;
     width: 300px;
     height: 300px;
     margin-bottom: 3rem;
     position: relative;
-    overflow: hidden;
 }
-
-
-.att-column:hover{
-    box-shadow: 0 0 2rem 0px rgba(0, 0, 0, 0.2);
-}
-.layer{
-    background: transparent;   
-    height: 100%;
-    width: 20rem;
-    position: absolute;
-    top: 0;
-    transition: 0.5s;
-    border-radius: 5px;;
-}
-.layer:hover{
-    background: #9C9C9C;   
-}
-
-.layer h3{
-    width: 100%;
-    left: 45%;
-    font-weight: 500;
-    color: #080808;
-    font-size: 2.5rem;
-    bottom: 0;
-    
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-.layer p{
-    width: 80%;
-    font-weight: 400;
-    color: #080808;
-    font-size: 17px;
-    top: 0;
-    left: 45%;
-    transform: translateX(-50%);
-    position: absolute;
+.attitude .title h3 {
+    letter-spacing: .1em;
+    font-family: IBM Plex Mono;
+    color: #9C9C9C;
+    font-size: 25px;
     text-align: center;
-    opacity: 0;
-    transition: 0.5s;
+}
 
-    
-}
-.layer:hover h3 {
-    bottom: 60%;
-    opacity: 1;
-}
-.layer:hover p {
-    top: 150px;
-    opacity: 1;
-}
 .attitude .touch-btn{
     position: relative;
     margin-bottom: 5%;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 5%;
 }

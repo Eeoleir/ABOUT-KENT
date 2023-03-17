@@ -2,79 +2,70 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 /*----------options-----------*/
+body{
+    overflow: hidden;
+}
 .row {
     margin: 1%;
     display: flex;
     justify-content: space-between;
+    
   }
 
-.column{
-    flex: 0 0 60%;
-    max-width: 60%;
-}
-
 .main-content{
-    overflow: hidden;
     width: 80%;
     margin: auto;
     padding-top: 120px;
     padding-bottom: 50px;
     
+    
 }
+
+.column{
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+/* LEFT SIDE */
 .main-content .left{
     width: 100%;
     margin: 0 0 5% 8%;
-    padding: 0 50px 0;
+    padding: 0 50px 0 50px;
 }
 .main-content .left h3{
-
     font-family: Timmana;
     font-size: 32px;
     color: #9C9C9C;
     letter-spacing: .1em;
 }
+
 .main-content .left h3 span{
     font-family: "Clicker Script", cursive;
     color: #EC1839;
     font-size: 32px;
     letter-spacing: .1em;
 }
-.main-content .left h4{
-    margin-top: 4%;
-    font-family: Timmana;
-    font-size: 28px;
-    color: #9C9C9C;
-    letter-spacing: .1em;
-}
-.main-content .left h4 span{
-    font-family: Timmana;
-    color: #EC1839;
-    font-size: 30px;
-    letter-spacing: .1em;
-}
+
 
 .main-content .left p{
     letter-spacing: .1em;
     font-family: IBM Plex Mono;
     color: #9C9C9C;
     font-size: 20px;
-    letter-spacing: .1em;
-    margin-top: 5%;
+    margin-top: 10%;
     
 }
 
 .logo2 .fa-brands{
     color: #EC1839 ;
-    margin: 6% 4% 6% 0;
+    margin: 10% 4% 15% 0;
     cursor: pointer;
 }
 
 .about-btn {
-    display: inline-block;
     border-radius: 50px;
     text-decoration: none;
     font-family: IBM Plex Mono;
@@ -94,19 +85,19 @@
 
 }
 
+/* RIGHT SIDE */
+
+
 .main-content .right{
-    flex-basis: 60%;
+    width: 100%;
     position: relative;
-    perspective: 1000px;
-    margin: 3%;
-    left: 30px;
+    margin-left: 30%;
+    
 }
 .main-content .right img{
-    display: block;
     width: 325px;
     height: 302px;
     border-radius: 50%;
-    align-items: right;
-    position: absolute;
+    position: relative;
 }
 

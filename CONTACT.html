@@ -1,119 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_contact.css">
-    <link rel="stylesheet" href="../css/loader.css">
     <link rel="stylesheet" href="../css/header.css">
+
+    <!-- FONTS IN MY SITE -->
     <link rel="preconnect " href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ICONS IN MY SITE -->
     <script
       src="https://kit.fontawesome.com/0084cc2fcc.js"
       crossorigin="anonymous"
     ></script>
-    <title>CONTACT</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>HOME PAGE</title>
 </head>
+
+
 <body>
-    <!-- HEADER -->
-    <section class = "header">
-        <nav>
-            <div class="logo">
-                <a class="#" href="index.html"> <span>K </span> E V O</a>
-            </div>
-            
-            <div class = "nav-links">
-            
-                <ul>
-                    
-                    <li> <a href="index.html">HOME</a></li>
-                    <li> <a href="ABOUT.html">ABOUT</a></li>
-                    <li> <a href="EDUCATION.html">EDUCATION</a></li>
-                    <li> <a href="HOBBIES.html">HOBBIES</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-                <a class="know-btn" href="CONTACT.html">CONTACT</a>
-            </div>
-        </nav>
+    
+    <!-- TOP OF THE PAGE -->
+  <section class = "header">
+      <!-- NAVIGATION AT THE TOP -->
+      <nav>
+          <div class="logo">
+              <a href="index.html"> <span>K </span> E V O</a>
+          </div>
 
-        <!-- CONTACT -->
-        <section class="contact-map">
-            <h3>CONTACT ME</h3>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7449.5989060149905!2d124.61681472055386!3d8.471399275018497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1678447126525!5m2!1sen!2sph" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+          <div class = "nav-links">
+              <ul>
+                  <li> <a href="index.html">HOME</a></li>
+                  <li> <a href="ABOUT.html">ABOUT</a></li>
+                  <li> <a href="EDUCATION.html">EDUCATION</a></li>
+                  <li> <a href="HOBBIES.html">HOBBIES</a></li>
+              </ul>
+          </div>
 
-        <!-- CONTACTS INFORMATION -->
-        <section class="contact-us">
-            <div class="row">
-              <div class="contact-col">
-                <div>
-                  <i class="fa-solid fa-house-chimney "></i>
-                  <span>
-                    <h3>Zone 12c, Carmen, Cagayan de Oro, Philippines</h3>
-                    <p>Visit my place</p>
-                  </span>
-                </div>
-                <div class="contact-col">
-                  <i class="fa-solid fa-phone "></i>
-                  <span>
-                    <h3>+63 905 715 8535</h3>
-                    <p>Monday to Friday</p>
-                  </span>
-                </div>
-                <div class="contact-col">
-                  <i class="fa-solid fa-envelope "></i>
-                  <span>
-                    <h3>asilo.kent19@gmail.com</h3>
-                    <p>Email Us</p>
-                  </span>
-                </div>
-                </div>
-              <div class="contact-col">
-                <form action="form.php" method="post">
-                  <input type="text" name="name" placeholder="Enter Your Name" required>
-                  <input type="email" name="email" placeholder="Enter Email Address" required>
-                  <input type="text" name="subject" placeholder="Enter Your Subject" required>
-                  <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                  <button type="submit" class="know-btn red-btn">Send Message</button>
-                </form>
-              </div>
-          </section>
+          <div class="contact">
+              <a class="know-btn" href="CONTACT.html">CONTACT</a>
+          </div>
+      </nav>
+  </section>
 
+  <!-- CONTACT MAP -->
+  <section class="contact-map">
+      <h3>CONTACT ME</h3>
+      <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7449.5989060149905!2d124.61681472055386!3d8.471399275018497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1678447126525!5m2!1sen!2sph" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </section>
 
+  <!-- CONTACTS INFORMATION -->
+  <section class="contact-us">
+    <div class="row">
+      <!-- LEFT SIDE OF THE CONTACT INFORMATION -->
+      <div class="left">
 
+        <div>
+          <i class="fa-solid fa-house-chimney "></i>
+          <span>
+            <h3>Zone 12c, Carmen, Cagayan de Oro, Philippines</h3>
+            <p>Visit my place</p>
+          </span>
+        </div>
 
+        <div>
+          <i class="fa-solid fa-phone "></i>
+          <span>
+            <h3>+63 905 715 8535</h3>
+            <p>Monday to Friday</p>
+          </span>
+        </div>
 
+        <div>
+          <i class="fa-solid fa-envelope "></i>
+          <span>
+            <h3>asilo.kent19@gmail.com</h3>
+            <p>Email Us</p>
+          </span>
+        </div>
 
-
-    <!-- LOADER -->
-    <div class="center">
-        <div class="loader"></div>
-    </div>
-
-    <div style="position: relative">
-        <iframe style="position: absolute; top: 0; left: 0; width: 0; height: 0; visibility: hidden;"
-         src="https://www.youtube.com/embed/ObdvMkCKws" frameborder="0" allowfullscreen></iframe>
-        <iframe style="position: absolute; top: 0; left: 0; width: 0; height: 0; visibility: hidden;"
-         src="https://www.youtube.com/embed/ObdvMkCKws" frameborder="0" allowfullscreen></iframe>
-    </div>
+      </div>
+      <!-- RIGHT SIDE OF THE CONTACT INFORMATION -->
+      <div class="right">
+        <form>
+          <input type="text" name="name" placeholder="Enter Your Name" required>
+          <input type="email" name="email" placeholder="Enter Email Address" required>
+          <input type="text" name="subject" placeholder="Enter Your Subject" required>
+          <textarea rows="8" name="message" placeholder="Message" required></textarea>
+          <button class="know-btn red-btn">Send Message</button>
+        </form>
+      </div>
       
-
-    <!-- SCRIPT LOADER -->
-    <script type="text/javascript">
-        document.onreadystatechange = function(){
-            console.log(document.readyState);
-            if(document.readyState === "complete"){
-                document.querySelector('.center').style.display = 'none';
-            }
-        }
-    </script>
+  </section>
 </body>
 </html>

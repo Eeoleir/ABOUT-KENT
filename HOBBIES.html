@@ -1,243 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style_hobbies.css">
-    <link rel="stylesheet" href="../css/loader.css">
     <link rel="stylesheet" href="../css/header.css">
+
+    <!-- FONTS IN MY SITE -->
     <link rel="preconnect " href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/0084cc2fcc.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>HOBBIES</title>
+
+    <title>HOBBIES PAGE</title>
 </head>
 <body>
-     <!-- HEADER -->
-     <section class = "header">
+     <!-- TOP OF THE PAGE -->
+    <section class = "header">
+    <!-- NAVIGATION AT THE TOP -->
         <nav>
             <div class="logo">
-                <a class="#" href="index.html"> <span>K </span> E V O</a>
+                <a href="index.html"> <span>K </span> E V O</a>
             </div>
-            
+
             <div class = "nav-links">
-            
                 <ul>
-                    
                     <li> <a href="index.html">HOME</a></li>
                     <li> <a href="ABOUT.html">ABOUT</a></li>
                     <li> <a href="EDUCATION.html">EDUCATION</a></li>
                     <li> <a href="HOBBIES.html">HOBBIES</a></li>
                 </ul>
             </div>
+
             <div class="contact">
                 <a class="know-btn" href="CONTACT.html">CONTACT</a>
             </div>
         </nav>
+    </section>
 
-        <!-- WHO IS KENT SECTION -->
-        <section class="who">
-            
-            <div class="row">
-                <div class="column">
-                    <div class="left">
-                        <h3>Watching Anime</h3>
-                        <p>I have always been drawn to the vivid and imaginative worlds 
-                            of anime. There's just something captivating about the way 
-                            it tells a story, from the colorful characters to the 
-                            intricate plotlines. Whether it's the action-packed 
-                            scenes or the heartwarming moments of friendship and 
-                            romance, I find myself completely absorbed in every episode. </p>
-                        <div>
-                            <a class="touch-btn" href="https://myanimelist.net/profile/Kaw0ri">Visit my MAL</a>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="right">
-                        <div class="slider">
-                            <div class="slides">
-                                <!-- radio-button-start -->
-                                <input type="radio" name=radio-btn" id="radio1">
-                                <input type="radio" name=radio-btn" id="radio2">
-                                <input type="radio" name=radio-btn" id="radio3">
-                                <input type="radio" name=radio-btn" id="radio4">
-
-                                <!-- slide image start -->
-                                <div class="slide first">
-                                    <img src="img/a1.jpg" alt="anime1-picture">
-                                </div>
-                                <div class="slide">
-                                    <img src="img/a2.jpg" alt="anime2-picture">
-                                </div>
-                                <div class="slide">
-                                    <img src="img/a3.jpg" alt="anime3-picture">
-                                </div>
-                                <div class="slide">
-                                    <img src="img/a4.jpg" alt="anime4-picture">
-                                </div>
-                                
-                            
-                            </div>
-                            <div class="navigaitions-container"></div>
-                            <!-- auto navigation -->
-                            <div class="auto-navi">
-                                <div class="auto-btn1"></div>
-                                <div class="auto-btn2"></div>
-                                <div class="auto-btn3"></div>
-                                <div class="auto-btn4"></div>
-                            </div>
-                            <!-- manual navigation -->
-                            <div class="navi-manual">
-                                <label for="radio1" class="manual-btn"></label>
-                                <label for="radio2" class="manual-btn"></label>
-                                <label for="radio3" class="manual-btn"></label>
-                                <label for="radio4" class="manual-btn"></label>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>    
-            <script type="text/javascript">
-                var counter = 1;
-                setInterval(function(){
-                    document.getElementById('radio' + counter).checked = true;
-                    counter++;
-                    if (counter > 4){
-                        counter = 1;
-                    }   
-                }, 3000);
-            </script>
-        </section>
-
-
-        <!-- WHAT IS KENT SECTION -->
-        <section class="what">
-
-            <div class="row">
-                <div class="column">
-                    <div class="left">
-                        <div class="slider2">
-                            <div class="slides2">
-                                <!-- radio-button-start -->
-                                <input type="radio" name=1radio-btn" id="radio5">
-                                <input type="radio" name=1radio-btn"  id="radio6">
-                                <input type="radio" name=1radio-btn" id="radio7">
-                                <input type="radio" name=1radio-btn" id="radio8">
-
-                                <!-- slide image start -->
-                                <div class="slide2 second">
-                                    <img src="img/a.gif" alt="anime1-picture">
-                                </div>
-                                <div class="slide2">
-                                    <img src="img/b.gif" alt="anime2-picture">
-                                </div>
-                                <div class="slide2">
-                                    <img src="img/c.gif" alt="anime3-picture">
-                                </div>
-                                <div class="slide2">
-                                    <img src="img/d.gif" alt="anime4-picture">
-                                </div>
-                                
-                            </div>
-                            
-                            <!-- manual navigation -->
-                            <div class="navi-manual2">
-                                <label for="radio5" class="manual-btn2"></label>
-                                <label for="radio6" class="manual-btn2"></label>
-                                <label for="radio7" class="manual-btn2"></label>
-                                <label for="radio8" class="manual-btn2"></label>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="right">
-                        <h3>Reading Stories</h3>
-                        <p>I absolutely love reading comics! There's something 
-                            about the vivid illustrations and colorful characters
-                             that draws me in every time. Whether it's a classic
-                              superhero adventure or a quirky indie series, I 
-                              always find myself lost in the pages, eagerly 
-                              following along with each twist and turn of the story.
-                              There's a real sense of excitement and wonder that comes 
-                              with reading comics, and I can easily spend hours 
-                              flipping through my favorite titles. For me, there's 
-                              no better way to unwind and escape into another world 
-                              than with a good comic book.</p>
-                    </div>
-                </div>
-                
-            </div>    
-            </script>
-            </script>
-        </section>
-
-        <!-- OTHER HOBBIES -->
-        <section class="attitude">
-            <h3>OTHER HOBBIES</h3>
-            <div class="att-row">
-                <div class="att-column">
-                    <img src="img/mus.PNG" alt="MUSIC">
-                    <div class="layer">
-                        <h3>MUSIC</h3>
-                        <p>I love listening to music, especially while working or exercising. 
-                            It helps me to stay focused and motivated.
-                        </p>
-                    </div>
-                </div>
-                <div class="att-column">
-                    <img src="img/game.PNG" alt="gaming">
-                    <div class="layer">
-                        <h3>GAMING</h3>
-                        <p>I love games, especially online ones. They 
-                             are a great way to unwind and escape 
-                             reality for a while. 
-                            </p>
-                    </div>
-                </div>
-                <div class="att-column">
-                    <img src="img/pagkain.PNG" alt="eating">   
-                    <div class="layer">
-                        <h3>EATING</h3>
-                        <p>I love food, especially trying out new dishes and experimenting with different flavors. Whether it's cooking at home or eating out.</p>
-                    </div>
-                </div>
-                
-            </div> 
-            <div class="touch-btn" href="EDUCATION.html">FIND OUT MORE</div>   
-        </section>
-
-        <!-- LOADER -->
-    <div class="center">
-        <div class="loader"></div>
-    </div>
-
-    <div style="position: relative">
-        <iframe style="position: absolute; top: 0; left: 0; width: 0; height: 0; visibility: hidden;"
-         src="https://www.youtube.com/embed/ObdvMkCKws" frameborder="0" allowfullscreen></iframe>
-    </div>
-      
-
-    <!-- SCRIPT LOADER -->
-    <script type="text/javascript">
-        document.onreadystatechange = function(){
-            console.log(document.readyState);
-            if(document.readyState === "complete"){
-                document.querySelector('.center').style.display = 'none';
-            }
-        }
-    </script>
+    <section class="msg">
+        <h1>STILL ON PROGRESS</h1>
+    </section>
 </body>
 </html>
