@@ -12,19 +12,44 @@
     justify-content: space-between;
   }
 
-.column{
-    flex-basis: 50%;
-    max-width: 50%;
-}
-
-/* WHO IS KENT SECTION */
-.msg{
-    overflow: hidden;
+/* School */
+.School{
     width: 100%;
-    padding: 125px 0 150px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
-.msg h1{
-    color: yellow;
+.School h1{
+    margin: 3% 0 0 0;
     font-size: 50px;
+    text-align: center;
+    color: #EC1839;
+    font-family: "Pirata One", sans-serif;
+    letter-spacing: .1em;
+}
+.school-column{
+    left: -1%;
+    position: relative;
+    margin: 0 4%;
+    
+}
+.school-column img{
+    margin: 10% 0% 0% 0%;
+    height: fit-content;
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+}
+.school-column h2{
+    color: #9C9C9C;
+    text-align: center;
+    margin: 4% 0;
+}
+.school-column p{
+
+    color: #9C9C9C;
     text-align: center;
 }
